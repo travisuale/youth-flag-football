@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(245, 183, 0, 0.12), transparent 24%),
+    linear-gradient(180deg, #353800 0%, #4c5200 24%, #1d2100 56%, #08111d 100%);
+  color: #fffdf7;
+}
+
+* {
+  border-color: rgba(220, 231, 245, 0.12);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .poster-panel {
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+  }
+
+  .poster-card {
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+  }
+
+  .poster-band {
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
+  }
+}
